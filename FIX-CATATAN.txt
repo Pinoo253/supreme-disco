@@ -1,0 +1,29 @@
+PERBAIKAN TAMPILAN MOBILE ADB CREATIVE TEAM
+
+Perbaikan:
+- Memastikan judul, deskripsi, dan tombol hero selalu terlihat.
+- Mematikan efek reveal yang berpotensi membuat konten hero tersembunyi saat JavaScript gagal atau lambat.
+- Mengatur ulang susunan hero untuk layar HP agar teks tidak tertutup kartu visual.
+- Memperbaiki ukuran judul, jarak, dan pembungkus tombol di layar kecil.
+
+Cara memasang:
+1. Ekstrak ZIP ini.
+2. Upload semua isi folder ke root repository GitHub dan pilih Replace untuk file yang sama.
+3. Pastikan index.html, main.js, style.css, config.js, admin.html, admin.js, schema.sql, seed.sql, dan seluruh folder assets diunggah. Khusus logo ADB: pastikan file assets/adb-creative-team-logo.webp ikut terunggah.
+4. Tunggu GitHub Pages selesai deploy.
+5. Buka ulang website. Jika masih versi lama, refresh paksa atau hapus cache browser.
+
+Catatan: Perubahan ini memperbaiki tampilan CSS. Tidak mengubah database atau kredensial Supabase.
+
+Perbaikan logo terbaru:
+- Header website, footer, dan dashboard admin sekarang menggunakan file assets/adb-creative-team-logo.webp yang sama.
+- Ukuran logo mengikuti rasio aslinya dan memakai object-fit: contain agar tidak terpotong di desktop, tablet, maupun HP.
+- Nama file logo baru dibuat khusus agar tidak tertukar dengan logo sekolah lama.
+
+PATCH TERBARU: Logo ADB ditanam langsung di HTML (data URI), sehingga tidak bergantung pada jalur assets saat deploy. Header dan warna teks juga diperkuat agar tetap terbaca pada desktop, tablet, dan HP. Unggah ulang seluruh isi folder fixsite dan lakukan hard refresh/cache clear.
+Pemeriksaan tambahan: navigasi desktop otomatis berubah menjadi tombol menu pada lebar layar sampai 1300px agar header tidak bertumpuk pada laptop/tablet landscape. Logo ADB tertanam langsung pada halaman utama dan admin.
+
+UPDATE: HEADER BATIK + EMAIL KRITIK & SARAN
+- Header kini bermotif batik kawung (biru) dengan garis emas dan pinggiran tumpal di bawahnya. Teks menu tetap terbaca.
+- Email resmi dokumentasi@smkn1adw.sch.id ditambahkan di bagian Contact (kartu email) dan footer.
+- Form pesan punya tombol baru "Kirim lewat Email" yang membuka aplikasi email dengan isi pesan terisi otomatis. Tombol "Send message" tetap menyimpan ke Supabase.
